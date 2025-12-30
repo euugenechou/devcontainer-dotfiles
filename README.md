@@ -6,7 +6,7 @@ non-nixified dotfiles](https://github.com/euugenechou/dotfiles).
 ## Installation
 
 ```bash
-git clone https://github.com/euugenechou/dotfiles.git ~/.dotfiles
+git clone https://github.com/euugenechou/devcontainer-dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
