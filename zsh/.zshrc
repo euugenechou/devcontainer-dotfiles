@@ -3,8 +3,6 @@ ZSH_THEME="milktea"
 
 export ZSH=$HOME/.oh-my-zsh         # path to oh-my-zsh installation
 export DOTFILES=$HOME/.dotfiles     # path to dotfiles
-export LC_ALL=en_US.utf-8           # language stuff
-export LANG="$LC_ALL"               # more language stuff
 export UPDATE_ZSH_DAYS=14           # updates are tolerated
 
 if command -v nvim > /dev/null; then
