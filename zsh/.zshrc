@@ -52,7 +52,7 @@ bindkey '^J' fzf-cd-widget
 VIM_MODE_VICMD_KEY='jj'
 
 # other stuff
-[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
+[ -f "$HOME/.fzf" ] && source <(fzf --zsh)
 [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
 # start typing + [Up-Arrow] - fuzzy find history forward

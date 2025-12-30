@@ -10,6 +10,11 @@ if [[ ! -d "$HOME/.zplug" ]]; then
     git clone "https://github.com/zplug/zplug" "$HOME/.zplug"
 fi
 
+if ! command -v "fzf" > /dev/null; then
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+fi
+
 # Relink configuration.
 rm -f "$HOME/.zshrc"
 rm -f "$HOME/.oh-my-zsh/themes/milktea.zsh-theme"
