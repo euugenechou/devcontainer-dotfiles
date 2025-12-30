@@ -10,10 +10,10 @@ if [[ ! -d "$HOME/.zplug" ]]; then
     git clone "https://github.com/zplug/zplug" "$HOME/.zplug"
 fi
 
-if ! command -v "fzf" > /dev/null; then
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install
-fi
+# Install fzf
+rm -rf ~/.fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
 
 # Relink configuration.
 rm -f "$HOME/.zshrc"
